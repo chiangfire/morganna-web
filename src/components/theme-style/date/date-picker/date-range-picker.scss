@@ -1,0 +1,109 @@
+@import "../../common/var";
+
+@include b(date-range-picker) {
+  width: 432px;
+
+  &.has-sidebar {
+    width: 542px;
+  }
+
+  table {
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  .el-picker-panel__content {
+    margin: 0;
+  }
+
+  @include e(header) {
+    position: relative;
+    text-align: center;
+    height: 24px;
+
+    [class*=arrow-left] {
+      float: left;
+    }
+
+    [class*=arrow-right] {
+      float: right;
+    }
+
+    div {
+      font-size: 14px;
+      font-weight: 500;
+      margin-right: 50px;
+    }
+  }
+
+  @include e(content) {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 2px 10px 10px 10px;
+
+    @include when(left) {
+      /**border-right: 1px solid $--datepicker-inner-border-color;*/
+    }
+
+    @include when(right) {
+      .el-date-range-picker__header {
+
+        div {
+          margin-left: 50px;
+          margin-right: 50px;
+        }
+      }
+    }
+  }
+
+  @include e(editors-wrap) {
+    box-sizing: border-box;
+    display: table-cell;
+
+    @include when(right) {
+      text-align: right;
+    }
+  }
+
+  @include e(time-header) {
+    position: relative;
+    border-bottom: 1px solid $--datepicker-inner-border-color;
+    font-size: 12px;
+    padding: 2px 10px 2px 10px;
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+
+    > .el-icon-arrow-right {
+      font-size: 14px;
+      vertical-align: middle;
+      margin-left: 15px;
+      color: $--datepicker-icon-color;
+    }
+  }
+
+  @include e(date-picker-wrap) {
+    position: relative;
+    display: table-cell;
+    
+    &.is-start-date{
+      width: 80px;
+      padding-left: 5px;
+    }
+    
+    &.is-end-date{
+      width: 80px;
+      padding-right: 10px;
+    }
+
+    .el-picker-panel {
+      position: absolute;
+      top: 13px;
+      right: 0;
+      z-index: 1;
+      background: $--color-white;
+    }
+  }
+}
