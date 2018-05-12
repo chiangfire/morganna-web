@@ -342,7 +342,7 @@ $--input-disabled-placeholder-color: $--color-text-placeholder !default;
 $--input-medium-font-size: 14px !default;
 $--input-medium-height: 36px !default;
 
-$--input-small-font-size: 13px !default;
+$--input-small-font-size: 14px !default;
 $--input-small-height: 32px !default;
 
 $--input-mini-font-size: 12px !default;
@@ -404,9 +404,9 @@ $--button-medium-border-radius: $--border-radius-base !default;
 $--button-medium-padding-vertical: 10px !default;
 $--button-medium-padding-horizontal: 20px !default;
 
-$--button-small-font-size: 12px !default;
+$--button-small-font-size: 14px !default;
 $--button-small-border-radius: #{$--border-radius-base - 1} !default;
-$--button-small-padding-vertical: 9px !default;
+$--button-small-padding-vertical: 8px !default;
 $--button-small-padding-horizontal: 15px !default;
 
 $--button-mini-font-size: 12px !default;

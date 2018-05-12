@@ -194,8 +194,6 @@
     }
   }
   @include m(small) {
-    font-size: $--input-small-font-size;
-
     @include e(inner) {
       height: $--input-small-height;
       line-height: $--input-small-height;

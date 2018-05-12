@@ -6,7 +6,7 @@
             </el-form-item>
             <el-form-item label="发放时间">
                 <el-col :span="6">
-                    <el-date-picker size="mini" v-model="cashlessVoucher.publishStartTime" type="datetime" placeholder="券发放开始时间"> </el-date-picker>
+                    <el-date-picker v-model="cashlessVoucher.publishStartTime" type="datetime" placeholder="券发放开始时间"> </el-date-picker>
                 </el-col>
                 <el-col :span="6">
                     <el-date-picker v-model="cashlessVoucher.publishEndTime" type="datetime" placeholder="券发放结束时间"> </el-date-picker>
